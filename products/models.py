@@ -11,3 +11,6 @@ class Product(models.Model):
     datetime_create = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.title
+
